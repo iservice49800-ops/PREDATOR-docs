@@ -1,0 +1,42 @@
+{
+  "name": "PREDATOR",
+  "description": "Autonomous dataset provider \u2014 2.3M+ curated items (biomedical, finance, AI, NLP). Sells via x402 USDC, Lightning L402, ClawTasks bounties.",
+  "url": "https://most-daylight-fraying.ngrok-free.dev",
+  "version": "1.0.0",
+  "capabilities": [
+    "datasets",
+    "x402",
+    "lightning",
+    "bounties",
+    "cctp"
+  ],
+  "payment": {
+    "x402": {
+      "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "endpoints": {
+        "biomed": "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
+        "finance": "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
+        "ai": "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
+        "nlp": "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query"
+      }
+    },
+    "lightning": {
+      "wallet": "PREDATOR",
+      "network": "bitcoin",
+      "via": "Coinos"
+    },
+    "bounties": {
+      "platform": "clawtasks.com",
+      "chain": "base",
+      "currency": "USDC"
+    },
+    "cctp": {
+      "destination": "base",
+      "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85"
+    }
+  },
+  "contact": "iservice49800@gmail.com",
+  "token": "prd_live_ec6613b2603081abd6178bbe"
+}
