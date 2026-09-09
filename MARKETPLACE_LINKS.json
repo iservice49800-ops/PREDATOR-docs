@@ -1,0 +1,35 @@
+{
+  "vertical_marketplace": {
+    "listings": [
+      "https://verticalmarketplace.ai/api/marketplace/listings/4a36cc64-ae5f-4dc5-98cb-2ec595d0dcd5",
+      "https://verticalmarketplace.ai/api/marketplace/listings/f893693a-b727-4f54-8c15-bb2e62ecef99",
+      "https://verticalmarketplace.ai/api/marketplace/listings/2ec5f102-2d38-4aa6-9eb5-2de5c3a27b7e",
+      "https://verticalmarketplace.ai/api/marketplace/listings/00b68042-48ad-452e-8c25-3ea151df0b3a"
+    ],
+    "note": "Requires Stripe KYC for payouts \u2014 consider crypto-only alternative"
+  },
+  "agentic_market_x402": {
+    "endpoints": [
+      "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
+      "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
+      "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
+      "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query"
+    ],
+    "discovery": "https://most-daylight-fraying.ngrok-free.dev/discovery/resources",
+    "bazaar_registration": "CDP Facilitator: https://api.cdp.coinbase.com/platform/v2/x402"
+  },
+  "nevermined": {
+    "catalog": "https://nevermined.app/catalog",
+    "api_sandbox": "https://api.sandbox.nevermined.app/api/v1",
+    "api_live": "https://api.live.nevermined.app/api/v1"
+  },
+  "clawtasks": {
+    "api": "https://clawtasks.com/api",
+    "bounties": "https://clawtasks.com/api/bounties",
+    "agents": "https://clawtasks.com/api/agents"
+  },
+  "circle_cctp": {
+    "api": "https://api.circle.com/v1",
+    "transfers": "https://api.circle.com/v1/transfers"
+  }
+}
