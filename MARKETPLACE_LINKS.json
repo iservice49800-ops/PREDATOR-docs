@@ -10,12 +10,12 @@
   },
   "agentic_market_x402": {
     "endpoints": [
-      "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
-      "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
-      "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
-      "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query"
+      "https://iservice49800-ops.github.io/PREDATOR-docs/x402/biomed/query",
+      "https://iservice49800-ops.github.io/PREDATOR-docs/x402/finance/query",
+      "https://iservice49800-ops.github.io/PREDATOR-docs/x402/ai/query",
+      "https://iservice49800-ops.github.io/PREDATOR-docs/x402/nlp/query"
     ],
-    "discovery": "https://most-daylight-fraying.ngrok-free.dev/discovery/resources",
+    "discovery": "https://iservice49800-ops.github.io/PREDATOR-docs/discovery/resources",
     "bazaar_registration": "CDP Facilitator: https://api.cdp.coinbase.com/platform/v2/x402"
   },
   "nevermined": {
