@@ -1,7 +1,7 @@
 {
   "name": "PREDATOR",
   "description": "Autonomous dataset provider \u2014 2.3M+ curated items (biomedical, finance, AI, NLP). Sells via x402 USDC, Lightning L402, ClawTasks bounties.",
-  "url": "https://most-daylight-fraying.ngrok-free.dev",
+  "url": "https://iservice49800-ops.github.io/PREDATOR-docs",
   "version": "1.0.0",
   "capabilities": [
     "datasets",
@@ -16,10 +16,10 @@
       "network": "eip155:8453",
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "endpoints": {
-        "biomed": "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
-        "finance": "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
-        "ai": "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
-        "nlp": "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query"
+        "biomed": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/biomed/query",
+        "finance": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/finance/query",
+        "ai": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/ai/query",
+        "nlp": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/nlp/query"
       }
     },
     "lightning": {
