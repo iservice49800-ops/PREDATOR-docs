@@ -2,11 +2,11 @@
   "service": "PREDATOR",
   "version": "2.0.0",
   "status": "operational",
-  "updated_at": "2026-09-10T15:31:49Z",
+  "updated_at": "2026-09-10T15:33:33Z",
   "datasets": {
     "total_items": 2365109,
     "goal": 3000000,
-    "progress_pct": 78.8,
+    "progress_pct": 78.84,
     "domains": [
       "general",
       "knowledge_graph",
@@ -15,16 +15,25 @@
       "biomedical_text",
       "ai",
       "mixed_content",
-      "web_corpus"
+      "web_corpus",
+      "policy_dataset",
+      "social_media",
+      "health_dataset",
+      "scientific_paper"
     ],
     "sources": [
       "Wikidata",
       "StackExchange",
+      "mega_expansion",
       "EuropePMC",
       "GitHub_Topics",
       "CommonCrawl",
       "Reddit",
-      "StackOverflow"
+      "StackOverflow",
+      "UN_Data",
+      "WHO",
+      "arXiv",
+      "mcp_snapshot"
     ]
   },
   "rails": [
