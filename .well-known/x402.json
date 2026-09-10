@@ -2,22 +2,22 @@
   "x402Version": 2,
   "services": {
     "biomed": {
-      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
+      "resource": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/biomed/query",
       "priceMicroUsdc": 100000,
       "network": "eip155:8453"
     },
     "finance": {
-      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
+      "resource": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/finance/query",
       "priceMicroUsdc": 50000,
       "network": "eip155:8453"
     },
     "ai": {
-      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
+      "resource": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/ai/query",
       "priceMicroUsdc": 100000,
       "network": "eip155:8453"
     },
     "nlp": {
-      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query",
+      "resource": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/nlp/query",
       "priceMicroUsdc": 50000,
       "network": "eip155:8453"
     }
