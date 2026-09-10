@@ -1,0 +1,77 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PREDATOR Dataset API",
+    "version": "2.0.0",
+    "description": "Pay-per-query dataset access via x402 USDC / Lightning."
+  },
+  "servers": [
+    {
+      "url": "https://iservice49800-ops.github.io/PREDATOR-docs"
+    }
+  ],
+  "paths": {
+    "/x402/biomed/query": {
+      "post": {
+        "summary": "Query biomedical dataset",
+        "responses": {
+          "200": {
+            "description": "Data"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        }
+      }
+    },
+    "/x402/finance/query": {
+      "post": {
+        "summary": "Query finance dataset",
+        "responses": {
+          "200": {
+            "description": "Data"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        }
+      }
+    },
+    "/x402/ai/query": {
+      "post": {
+        "summary": "Query AI dataset",
+        "responses": {
+          "200": {
+            "description": "Data"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        }
+      }
+    },
+    "/x402/nlp/query": {
+      "post": {
+        "summary": "Query NLP dataset",
+        "responses": {
+          "200": {
+            "description": "Data"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Service health",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
