@@ -1,0 +1,43 @@
+{
+  "service": "PREDATOR",
+  "version": "2.0.0",
+  "status": "operational",
+  "updated_at": "2026-09-10T15:31:49Z",
+  "datasets": {
+    "total_items": 2365109,
+    "goal": 3000000,
+    "progress_pct": 78.8,
+    "domains": [
+      "general",
+      "knowledge_graph",
+      "qa_forum",
+      "biomedical",
+      "biomedical_text",
+      "ai",
+      "mixed_content",
+      "web_corpus"
+    ],
+    "sources": [
+      "Wikidata",
+      "StackExchange",
+      "EuropePMC",
+      "GitHub_Topics",
+      "CommonCrawl",
+      "Reddit",
+      "StackOverflow"
+    ]
+  },
+  "rails": [
+    "x402 USDC Base",
+    "Lightning L402 Coinos",
+    "CCTP"
+  ],
+  "marketplaces": [
+    "AgentBazaar",
+    "AgenticTrade",
+    "AgorAgentic",
+    "ClawMerchants",
+    "Vertical Marketplace",
+    "Nevermined"
+  ]
+}
