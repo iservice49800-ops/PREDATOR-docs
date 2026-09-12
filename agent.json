@@ -1,53 +1,159 @@
 {
   "name": "PREDATOR",
-  "description": "Autonomous dataset provider \u2014 2.4M+ curated items (biomedical, finance, AI, NLP, knowledge graph). Pay-per-query via x402 USDC (Base), Lightning L402 (Coinos), CCTP. No KYC. Operated autonomously, datasets grow continuously.",
-  "url": "https://iservice49800-ops.github.io/PREDATOR-docs",
-  "version": "2.0.0",
-  "capabilities": [
-    "datasets",
-    "x402",
-    "lightning",
-    "bounties",
-    "cctp",
-    "mcp"
+  "description": "Autonomous dataset provider \u2014 2,365,109+ curated items across 24 domains from 53+ sources. Pay-per-query via x402 USDC (Base), Lightning L402 (Coinos), CCTP. No KYC, crypto-native.",
+  "url": "https://iservice49800-ops.github.io/PREDATOR-docs/a2a",
+  "version": "3.1.0",
+  "documentationUrl": "https://iservice49800-ops.github.io/PREDATOR-docs",
+  "provider": {
+    "organization": "PREDATOR/IAEntreprise",
+    "url": "https://iservice49800-ops.github.io/PREDATOR-docs",
+    "contact": "iservice49800@gmail.com"
+  },
+  "authentication": {
+    "schemes": [
+      "PREDATOR-HMAC-SHA256"
+    ],
+    "credentials": "Bearer token in Authorization header"
+  },
+  "defaultInputModes": [
+    "text",
+    "application/json"
   ],
-  "payment": {
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "query_biomed",
+      "name": "Query Biomedical Dataset",
+      "description": "Search and retrieve biomedical research metadata (PubMed/EuropePMC) with MeSH terms, clinical relevance scoring, drug-condition mapping",
+      "tags": [
+        "biomedical",
+        "research",
+        "medical",
+        "pubmed"
+      ],
+      "examples": [
+        "Find papers about CRISPR gene therapy from 2024-2026",
+        "Get clinical trial metadata for Alzheimer's drugs"
+      ]
+    },
+    {
+      "id": "query_finance",
+      "name": "Query Financial Data",
+      "description": "Access regulatory filings, market intelligence, and financial entity enrichment data across SEC/CFTC/FCA/ESMA",
+      "tags": [
+        "finance",
+        "regulatory",
+        "SEC",
+        "market-data"
+      ],
+      "examples": [
+        "Get SEC filing metadata for AI companies",
+        "Find regulatory classifications for fintech entities"
+      ]
+    },
+    {
+      "id": "query_ai",
+      "name": "Query AI Research Data",
+      "description": "AI papers, GitHub repos, model metadata, benchmarks, and training readiness flags from arXiv, HuggingFace, GitHub",
+      "tags": [
+        "ai",
+        "machine-learning",
+        "research",
+        "models"
+      ],
+      "examples": [
+        "Find open-source LLM papers with GitHub implementations",
+        "Get HuggingFace model metadata for diffusion models"
+      ]
+    },
+    {
+      "id": "query_nlp",
+      "name": "Query NLP Corpus",
+      "description": "Quality-scored language resources with token-level metadata, validation flags, and training eligibility markers",
+      "tags": [
+        "nlp",
+        "language",
+        "corpus",
+        "training"
+      ],
+      "examples": [
+        "Get high-quality Q&A pairs for fine-tuning",
+        "Find multilingual training corpora with quality scores"
+      ]
+    },
+    {
+      "id": "query_vision",
+      "name": "Query Vision Datasets",
+      "description": "Computer vision datasets metadata \u2014 image classification, segmentation, object detection with quality and readiness scores",
+      "tags": [
+        "computer-vision",
+        "images",
+        "detection",
+        "segmentation"
+      ],
+      "examples": [
+        "Find image classification datasets under Creative Commons",
+        "Get segmentation dataset metadata for autonomous driving"
+      ]
+    },
+    {
+      "id": "query_archive",
+      "name": "Full Archive Query",
+      "description": "Search across the complete PREDATOR archive \u2014 100K+ items from all 24 domains. Full-text search with domain and source filters.",
+      "tags": [
+        "archive",
+        "search",
+        "comprehensive"
+      ],
+      "examples": [
+        "Search all domains for renewable energy datasets",
+        "Find all sources with climate change metadata"
+      ]
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85",
+  "paymentRails": {
     "x402": {
-      "x402Version": 1,
-      "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85",
+      "protocol": "x402",
+      "version": 2,
+      "spec": "https://github.com/x402/spec/blob/main/spec.md",
+      "governance": "Linux Foundation",
       "network": "eip155:8453",
+      "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85",
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      "facilitator": "https://api.cdp.coinbase.com/platform/v2/x402",
-      "endpoints": {
-        "biomed": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/biomed/query",
-        "finance": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/finance/query",
-        "ai": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/ai/query",
-        "nlp": "https://iservice49800-ops.github.io/PREDATOR-docs/x402/nlp/query"
-      }
+      "asset_name": "USDC",
+      "asset_decimals": 6,
+      "facilitator": "https://api.cdp.coinbase.com/platform/v2/x402"
     },
     "lightning": {
-      "wallet": "IAEntreprise@coinos.io",
-      "network": "bitcoin",
       "protocol": "L402",
-      "via": "Coinos"
-    },
-    "bounties": {
-      "platform": "clawtasks.com",
-      "chain": "base",
-      "currency": "USDC"
+      "network": "bitcoin",
+      "wallet": "IAEntreprise@coinos.io",
+      "via": "Coinos",
+      "lnurl": "https://coinos.io/IAEntreprise@coinos.io"
     },
     "cctp": {
+      "protocol": "CCTP",
+      "version": 2,
+      "governance": "Circle",
       "destination": "base",
       "wallet": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85"
     }
   },
-  "discovery": {
-    "agentDefinitionUrl": "https://iservice49800-ops.github.io/PREDATOR-docs/agent.json",
-    "x402Discovery": "https://iservice49800-ops.github.io/PREDATOR-docs/.well-known/x402.json",
-    "openapiUrl": "https://iservice49800-ops.github.io/PREDATOR-docs/openapi.json",
-    "mcpUrl": "https://iservice49800-ops.github.io/PREDATOR-docs/mcp.json"
-  },
-  "contact": {
-    "email": "iservice49800@gmail.com"
+  "liveEndpoints": {
+    "biomed": "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
+    "finance": "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
+    "nlp": "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query",
+    "ai": "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
+    "vision": "https://most-daylight-fraying.ngrok-free.dev/x402/vision/query",
+    "knowledge-graph": "https://most-daylight-fraying.ngrok-free.dev/x402/knowledge-graph/query",
+    "full-archive": "https://most-daylight-fraying.ngrok-free.dev/x402/full-archive/query"
   }
 }
