@@ -1,0 +1,61 @@
+{
+  "x402Version": 2,
+  "scheme": "exact",
+  "network": "eip155:8453",
+  "payTo": "0xC0a2B4e8984610fd22c11DEDE7FF8C27bD54AF85",
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "facilitator": "https://api.cdp.coinbase.com/platform/v2/x402",
+  "services": {
+    "biomed": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query",
+      "priceMicroUsdc": 20000,
+      "priceUsd": "$0.02",
+      "description": "Curated PubMed/EuropePMC biomedical research metadata with MeSH terms, clinical relevance scoring, and drug-condition mapping. 149K+ items covering clinical trials, drug interactions, disease pathways.",
+      "items": 149386
+    },
+    "finance": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/finance/query",
+      "priceMicroUsdc": 15000,
+      "priceUsd": "$0.01",
+      "description": "Regulatory classification, filings metadata, market intelligence, entity enrichment across SEC/CFTC/FCA/ESMA",
+      "items": 1609
+    },
+    "nlp": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/nlp/query",
+      "priceMicroUsdc": 10000,
+      "priceUsd": "$0.01",
+      "description": "Quality-scored language resources with token-level metadata, validation flags, and training eligibility markers. 398K+ Q&A pairs from StackExchange/Reddit/StackOverflow for fine-tuning.",
+      "items": 397935
+    },
+    "ai": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/ai/query",
+      "priceMicroUsdc": 20000,
+      "priceUsd": "$0.02",
+      "description": "AI papers, cross-referenced GitHub repos, model metadata, benchmarks from HuggingFace, arXiv, and GitHub. 104K+ items with training readiness flags.",
+      "items": 104668
+    },
+    "vision": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/vision/query",
+      "priceMicroUsdc": 50000,
+      "priceUsd": "$0.05",
+      "description": "Image classification, segmentation, and object detection metadata with quality scores and training readiness",
+      "items": 13099
+    },
+    "knowledge-graph": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/knowledge-graph/query",
+      "priceMicroUsdc": 50000,
+      "priceUsd": "$0.05",
+      "description": "568K+ entity relationship records with provenance \u2014 entities, relations, and knowledge graph triples for RAG and entity linking applications.",
+      "items": 568862
+    },
+    "full-archive": {
+      "resource": "https://most-daylight-fraying.ngrok-free.dev/x402/full-archive/query",
+      "priceMicroUsdc": 1000000,
+      "priceUsd": "$1.00",
+      "description": "Complete PREDATOR archive \u2014 2.36M items across all 24 domains from 53 curated sources. Comprehensive AI training corpus with provenance and quality scores.",
+      "items": 2365109
+    }
+  },
+  "generated": "2026-09-12",
+  "version": "3.1.0"
+}
