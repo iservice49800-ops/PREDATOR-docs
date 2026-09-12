@@ -1,6 +1,6 @@
 {
   "service": "PREDATOR",
-  "version": "2.0.0",
+  "version": "3.1.0",
   "status": "operational",
   "updated_at": "2026-09-12T19:04:50Z",
   "datasets": {
@@ -21,20 +21,7 @@
       "health_dataset",
       "scientific_paper"
     ],
-    "sources": [
-      "Wikidata",
-      "StackExchange",
-      "mega_expansion",
-      "EuropePMC",
-      "GitHub_Topics",
-      "CommonCrawl",
-      "Reddit",
-      "StackOverflow",
-      "UN_Data",
-      "WHO",
-      "arXiv",
-      "mcp_snapshot"
-    ]
+    "sources": 53
   },
   "rails": [
     "x402 USDC Base",
